@@ -33,9 +33,10 @@ class ShareButtonSheet extends StatelessWidget {
     };
 
     return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
         Row(
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             IconButton(
               onPressed: () {
@@ -43,21 +44,33 @@ class ShareButtonSheet extends StatelessWidget {
               },
               icon: const Icon(Icons.close),
             ),
+            const SizedBox(
+              width: 120,
+            ),
+            const Text(
+              'איזה כיף! למי לשלוח את הקישור?',
+              textAlign: TextAlign.right,
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 18,
+                fontFamily: 'Rubik',
+                fontWeight: FontWeight.w500,
+                height: 0,
+              ),
+            ),
           ],
         ),
-        const SizedBox(height: 10),
         const Text(
-    'איזה כיף! למי לשלוח את הקישור?',
-    textAlign: TextAlign.right,
-    style: TextStyle(
-        color: Colors.black,
-        fontSize: 18,
-        fontFamily: 'Rubik',
-        fontWeight: FontWeight.w500,
-        height: 0,
-    ),
-)
-        const SizedBox(height: 20),
+          'הועתק',
+          textAlign: TextAlign.right,
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 16,
+            fontFamily: 'Rubik',
+            fontWeight: FontWeight.w400,
+            height: 0,
+          ),
+        ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[

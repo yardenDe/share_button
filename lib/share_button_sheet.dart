@@ -47,12 +47,16 @@ class ShareButtonSheet extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         const Text(
-          'Share Event',
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+    'איזה כיף! למי לשלוח את הקישור?',
+    textAlign: TextAlign.right,
+    style: TextStyle(
+        color: Colors.black,
+        fontSize: 18,
+        fontFamily: 'Rubik',
+        fontWeight: FontWeight.w500,
+        height: 0,
+    ),
+)
         const SizedBox(height: 20),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
